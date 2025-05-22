@@ -45,10 +45,10 @@ def main():
     try:
         user_name = input(CLR_G + "¿Cuál es tu nombre? -> " + CLR_W)
     except KeyboardInterrupt:
-        print(CLR_R + Style.BRIGHT + "\n\nEntrada de datos interrumpida por el usuario")
+        print(CLR_R + Style.BRIGHT + "\nEntrada de datos interrumpida por el usuario")
         return
     except EOFError:
-        print(CLR_R + Style.BRIGHT + "\n\nNo se detectó entrada de datos")
+        print(CLR_R + Style.BRIGHT + "\nNo se detectó entrada de datos")
         return
 
     # Imprimir con el nombre del usuario
@@ -56,7 +56,7 @@ def main():
         print(CLR_Y + Style.BRIGHT + f"{default_message} {user_name}")
     else:
         # Saludo por defecto para cuando no se ingresa un nombre
-        print(CLR_R + "\n\n(No se detectó entrada de datos)")
+        print(CLR_R + "\n(No se detectó entrada de datos)")
         print(CLR_Y + Style.BRIGHT + f"{default_message} + Nuestro nombre")
 
 
